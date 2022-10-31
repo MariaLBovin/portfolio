@@ -6,6 +6,9 @@ body {
   font-family: "Roboto Mono";
   font-size:1rem;
   background-image: url(/assets/background-image.jpg);
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
 }
 /*---------------------------meny-----------------------------------
 --------------------------------------------------------------------
@@ -100,11 +103,11 @@ body {
 /*--------------------------startsida--------------------------------
 ---------------------------------------------------------------------
 ---------------------------------------------------------------------*/
-.om-mig {
+.about {
 	min-width: 100vw;
 	min-height: 100vh;
 }
-.flex-container {
+.flex-startpage {
 	min-width: 100vw;
 	min-height: 100vh;
 	display: flex;
@@ -114,7 +117,7 @@ body {
   text-align: center;
   flex-direction: column;
 }
-.flex-item-1 {
+.flex_text_1 {
   top: 50vh;
 	width: 50vw;
 	height: fit-content;
@@ -140,16 +143,16 @@ body {
     }
   }
 }
-.flex-item-2 {
+.flex_image {
 	width: 50vw;
 	height: fit-content;
 }
-.flex-item-3 {
+.flex-text_2 {
 	width: 50vw;
 	height: fit-content;
 }
 
-.flex-item-4 {
+.flex_link {
   background-color: rgba(164, 196, 204, 0.55);
   border: none;
   padding: 15px 32px;
@@ -187,7 +190,7 @@ body {
 }
 .grid {
   display: grid;
-  min-width: 100%;
+  min-width: 100vw;
 	min-height: 100vh;
 	grid-template-areas: "jobb utbildning ovrigt";
   grid-template-columns: 1fr 1fr 1fr;
@@ -267,7 +270,7 @@ h3 {
   font-size: small;
 }
 /*--------------------------kontaktsida----------------------------*/
-.kontakt {
+.contact {
   min-height: 100vh;
   min-width: 100vw;
   margin-top:5vh;
@@ -302,7 +305,7 @@ h2 {
   }
 }
 
-.emailknapp {
+.email {
   background-color: rgba(164, 196, 204, 0.55);
   border: none;
   padding: 15px 32px;
