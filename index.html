@@ -19,16 +19,16 @@
 </head>
 <body>
     <section class="om-mig" id="om-mig">
-        <input type="checkbox" class="checkbox">
+        <input type="checkbox" class="checkbox" aria-label="meny">
         <div class="header">
-            <button class="menu">
+            <button class="menu" aria-expanded="false">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
         </button>
         <nav class="fold-out-menu">
             <ul>
-                <li><a href="#om-mig">Om mig</a></li>
+                <li><a href="#om-mig" >Om mig</a></li>
                 <li><a href="#cv">Mitt CV</a></li>
                 <li><a href="#kontakt">Kontakta mig</a></li>
             </ul>
@@ -43,7 +43,7 @@
                 </h1>    
         </div>
         <div class="flex-item-2">
-            <img src="/assets/Maria_Larsson_Bovin.png" width="150" height="200" loading="lazy"alt="Maria Larsson Bovin">
+            <img src="/assets/Maria_Larsson_Bovin.png" width="90" height="120" loading="lazy"alt="Maria Larsson Bovin">
         </div>
         <div class="flex-item-3">
             <p>Välkommen till mig sida. Jag är en kommunikationsnörd gone kodnörd som letar nya möjligheter.</p>
@@ -54,8 +54,8 @@
         </div>
     </section>
     <section class="cv" id="cv">
-        <div class="grid">
-            <input type="radio" id="jobb" name="tab" value="jobb">
+        <div class="grid" tabindex="0">
+            <input type="radio" id="jobb" name="tab" value="jobb" checked>
             <label for="jobb"><h2>Jobb</h2></label>
             <input type="radio" id="utbildning" name="tab" value="utbildning">
             <label for="utbildning"><h2>Utbildning</h2></label>
