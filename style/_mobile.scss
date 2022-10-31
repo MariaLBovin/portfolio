@@ -4,7 +4,8 @@ body {
 	margin: 0;
   display: block;
   font-family: "Roboto Mono";
-  background-image: url(/assets/background-image.jpg)
+  font-size:1rem;
+  background-image: url(/assets/background-image.jpg);
 }
 /*---------------------------meny-----------------------------------
 --------------------------------------------------------------------
@@ -104,8 +105,8 @@ body {
 	min-height: 100vh;
 }
 .flex-container {
-	width: 98%;
-	height: 85vh;
+	min-width: 100vw;
+	min-height: 100vh;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -147,10 +148,7 @@ body {
 	width: 50vw;
 	height: fit-content;
 }
-img {
-  max-width: 35vw;
-  max-height: fit-content;
-}
+
 .flex-item-4 {
   background-color: rgba(164, 196, 204, 0.55);
   border: none;
@@ -159,6 +157,9 @@ img {
   text-decoration: none;
   cursor: pointer;
   
+  h2 {
+    font-size: small;
+  }
   a {
     text-decoration: none;
     color:black;
@@ -182,20 +183,16 @@ img {
 .cv {
 	min-width: 100vw;
 	min-height: 100vh;
+  margin-top:5vh;
 }
 .grid {
   display: grid;
-  width: 100%;
-	height: 100vh;
+  min-width: 100%;
+	min-height: 100vh;
 	grid-template-areas: "jobb utbildning ovrigt";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 30px;
 	grid-gap: 5px;
-
-  & h2 {
-    margin:0;
-  }
-
 }
 article {
   font-size: small;
@@ -204,20 +201,24 @@ article {
   opacity:0;
 }
 .grid label {
-  text-align: justify;
+  text-align: center;
   transition: all 0.3s;
   padding-bottom:10px;
+  font-weight: 700;
 }
 #jobb + label {
   grid-area: jobb;
+  height: fit-content;
   cursor: pointer;
 }
 #utbildning + label {
   grid-area: utbildning;
+  height: fit-content;
   cursor: pointer;
 }
 #ovrigt + label {
   grid-area: ovrigt;
+  height: fit-content;
   cursor: pointer;
 }
 .jobblista {
@@ -267,8 +268,9 @@ h3 {
 }
 /*--------------------------kontaktsida----------------------------*/
 .kontakt {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin-top:5vh;
   display:flex;
   align-items: center;
   justify-content: space-evenly;
@@ -308,7 +310,7 @@ h2 {
   text-decoration: none;
   cursor: pointer;
   width:15vw;
-  height:5vh;
+  height:fit-content;
   margin-bottom:35vh;
   a {
     text-decoration: none;

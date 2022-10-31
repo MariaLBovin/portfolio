@@ -10,8 +10,8 @@
     <meta property="og:type" content="website">
     <meta property="og:description" content="Den här sidan visar FED-student Maria LBs CV">
     <meta property="og:locale" content="sv-SE">
-    <link rel="normalize" type="text/css" href="/style/normalize.css"/>
-    <link rel="stylesheet" type="text/css" href="/style/style.css"/>
+    <link rel="normalize" type="text/css" href="/style/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
@@ -19,9 +19,9 @@
 </head>
 <body>
     <section class="om-mig" id="om-mig">
-        <input type="checkbox" class="checkbox" aria-label="meny">
+        <input type="checkbox" class="checkbox" tabindex="0" aria-label="meny">
         <div class="header">
-            <button class="menu" aria-expanded="false">
+            <button class="menu" tabindex="-1" aria-expanded="false">
                 <span class="line"></span>
                 <span class="line"></span>
                 <span class="line"></span>
@@ -43,24 +43,24 @@
                 </h1>    
         </div>
         <div class="flex-item-2">
-            <img src="/assets/Maria_Larsson_Bovin.png" width="90" height="120" loading="lazy"alt="Maria Larsson Bovin">
+            <img src="/assets/Maria_Larsson_Bovin.png" width="200" height="220" loading="lazy" alt="Maria Larsson Bovin">
         </div>
         <div class="flex-item-3">
             <p>Välkommen till mig sida. Jag är en kommunikationsnörd gone kodnörd som letar nya möjligheter.</p>
         </div>
         <div class="flex-item-4">
-            <a href="#cv" class="las-mer">Läs mer om mig</a>
+            <a href="#cv" class="las-mer"><h2>Läs mer om mig</h2></a>
         </div>
         </div>
     </section>
     <section class="cv" id="cv">
-        <div class="grid" tabindex="0">
+        <div class="grid">
             <input type="radio" id="jobb" name="tab" value="jobb" checked>
-            <label for="jobb"><h2>Jobb</h2></label>
+            <label for="jobb" tabindex="0">Jobb</label>
             <input type="radio" id="utbildning" name="tab" value="utbildning">
-            <label for="utbildning"><h2>Utbildning</h2></label>
+            <label for="utbildning">Utbildning</label>
             <input type="radio" id="ovrigt" name="tab" value="ovrigt">
-            <label for="ovrigt"><h2>Övrigt</h2></label>
+            <label for="ovrigt">Övrigt</label>
             <article class="jobblista">
                 <h3>Nov 2017 - pågående PR- och kommunikationsansvarig B Wahlströms </h3>
                 Ansvarig för all kommunikation kring förlagets böcker. Ansvarig projektledare för utveckling och underhåll av hemsida samt press-sida. Strategiskt ansvarig för förlagets sociala medier. 
@@ -98,10 +98,10 @@
     </div>
     </section>
     <footer>
-        <div class="footer">
-        <a href="https://www.linkedin.com/in/mariabovin/"><img src="/assets/LI-In-Bug-32px.png" alt="Linkedin favicon"></img></a>
+    <div class="footer">
+        <a href="https://www.linkedin.com/in/mariabovin/"><img src="/assets/LI-In-Bug-32px.png" width="32" height="32" loading="lazy" alt="Linkedin favicon" ></a>
         <p>Här finns jag också</p>
-        <a href="https://github.com/MariaLBovin"><img src="/assets/GitHub-Mark-32px.png" alt="Github-länk"   </a>
+        <a href="https://github.com/MariaLBovin"><img src="/assets/GitHub-Mark-32px.png" width="32" height="32" loading="lazy" alt="Github-länk"></a>
     </div>
     </footer>
 </body>
