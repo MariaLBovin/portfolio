@@ -161,7 +161,7 @@ body {
   cursor: pointer;
   
   h2 {
-    font-size: small;
+    font-size: medium;
   }
   a {
     text-decoration: none;
@@ -198,7 +198,7 @@ body {
 	grid-gap: 5px;
 }
 article {
-  font-size: small;
+  font-size: medium;
 }
 .grid input[type="radio"] {
   opacity:0;
@@ -267,8 +267,41 @@ article {
   display: block;
 }
 h3 {
-  font-size: small;
+  font-size: medium;
 }
+aside {
+  max-width: 85vw;
+  text-align:right;
+  margin-right:25px;
+
+  a {
+    text-decoration: none;
+    color:black;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a:active {
+    text-decoration: underline;
+}
+}
+.tooltip {
+  position:absolute;
+  z-index:1;
+  visibility:hidden;
+  font-size: smaller;
+}
+.back-arrow:hover .tooltip {
+  visibility: visible;
+}
+
+
 /*--------------------------kontaktsida----------------------------*/
 .contact {
   min-height: 100vh;
